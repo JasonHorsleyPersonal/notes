@@ -1,6 +1,6 @@
 <?php
 
-include('Parsedown.php');
+include('includes/Parsedown.php');
 
 $loc = isset($_GET['loc']) ? urldecode($_GET['loc']) : false;
 if (!$loc || !file_exists($loc)) {
@@ -13,8 +13,8 @@ if (!$loc || !file_exists($loc)) {
 <html>
     <head>
         <title>View Notes</title>
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/skeleton.css" />
+        <link rel="stylesheet" href="includes/css/normalize.css" />
+        <link rel="stylesheet" href="includes/css/skeleton.css" />
 
         <link rel="icon" type="image/png" href="favicon.png">
     </head>
